@@ -1,0 +1,138 @@
+
+<!-- saved from url=(0034)http://127.0.0.1:5500/index.html?# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><doctype html="">
+
+    
+        
+        <link href="./Travel Agency_files/style.css" rel="stylesheet">
+        <link href="./Travel Agency_files/css2" rel="stylesheet">
+        <title>Travel Agency</title>
+    
+    
+    
+        <header>
+            <div class="wrapper">
+                <h1>Travel Agency<span class="orange">.</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/main-image">Acceuil</a></li>
+                        <li><a href="http://127.0.0.1:5500/steps">Destinations</a></li>
+                        <li><a href="http://127.0.0.1:5500/possibilities">Circuits</a></li>
+                        <li><a href="http://127.0.0.1:5500/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="main-image">
+            <div class="wrapper">
+                <h2>Organisez votre<br><strong>voyage sur mesure</strong></h2>
+                <a href="http://127.0.0.1:5500/index.html?#" class="button-1">Par ici</a>
+            </div>
+        </section>
+
+        <section id="steps">
+            <div class="wrapper">
+                <ul>
+                    <li id="steps-1">
+                        <h4>Planifier</h4>
+                        <p>Confiez nous vos rêves d'évasion: en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+                    </li>
+                    <li id="steps-2">
+                        <h4>Organiser</h4>
+                        <p>Bénéficier de l'entreprise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+                    </li> 
+                    <li id="steps-3">
+                        <h4>Voyager</h4>
+                        <p>Nous nous chargeons d'assurer votre sécuriter et de veiller á votre pleine sérénité tout au long de votre voyage.</p>
+                    </li> 
+                    <div class="clear"></div>   
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section id="possibilities">
+            <div class="wrapper">
+               <article style="background-image:url(images/article-image-1.jpg) ;">
+                   <div class="overlay">
+                       <h4>Partez en famille</h4>
+                       <p><small>Offrez le meilleur á ceux que vous aimez et partager des moments fabuleux!</small></p>
+                       <a href="http://127.0.0.1:5500/index.html?#" class="button-2">Plus d'infos</a>
+                    </div>
+               </article>
+
+               <article style="background-image: url(images/article-image-2.jpg);">
+                <div class="overlay">
+                    <h4>Envie de s'évader</h4>
+                    <p><small>Parfois un peu d'évasion serait le bienvenue et ferait le plus grand bien!</small></p>
+                    <a href="http://127.0.0.1:5500/index.html?#" class="button-2">Plus d'infos</a>
+                   </div>
+            </article>
+
+            <div class="clear"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-Nous</h3>
+                <p>Chez Travel Agency nous savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur á prendre chacune de vos attentes pour vous aider dans la préparation de votre séjour, cicuit ou voyage sur mesure.</p>
+
+                    <form>
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" placeholder="Votre nom">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Votre email">
+
+                        <input type="submit" value="OK" class="button-3">
+                    </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <h1>Travel Agency<span class="orange">.</span></h1>
+                <div class="copyright">Copyright © 2022. Tous droits réservés.</div>
+            </div>
+        </footer>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+    </doctype></body></html>
